@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Đa Cấp</title>
+    <style>
+        header {
+            background-color: #3c346c;
+            width: 84%;
+            height: 70%;
+            padding: 200px;
+            padding-left: 50px;
+            line-height: 7.5px;
+            background-image: url('../menu/background.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+        }
+        h1 {
+            color: #e21b1b;
+            font-size: 50px;
+            font-weight: 1000;
+            margin-top: 10px;
+            position: absolute;  /* or 'relative' depending on your layout */
+            bottom: 235px;        /* Adjusts the vertical position */
+            right: 90%;           /* Centers the text horizontally */
+            
+            
+        }
+        nav {
+            height: 50px;
+            background-color: rgb(28, 28, 28);
+            font-size: 35px;
+            
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            top: -15px;
+            right: -190px;
+            justify-content: start;
+            position: relative;
+            
+        }
+        
+        nav ul li {
+            position: relative;
+            margin-right: 10px;
+            
+            
+        }
+        nav ul li a {
+            color: #f4f4f4;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 10px; 
+        }
+        nav ul li a:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 50px; 
+            left: 0;
+            background-color: rgb(28, 28, 28);
+            padding: 0;
+            z-index: 1000;
+        }
+        .submenu li {
+            width: 150px;
+            margin: 0;
+            padding: 0;
+        }
+        .submenu li a {
+            display: block;
+            padding: 10px;
+            font-size: 18px;
+            color: #fff;
+            text-align: left;
+        }
+        .submenu li a:hover {
+            color: rgb(68, 73, 211);
+        }
+        nav ul li:hover > .submenu {
+            display: block;
+        }
+        
+        .arrow {
+            margin-left: 5px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <li><a href="../menu/T1background.jpg"><h1>T1 </h1></a></li>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Story</a></li>
+            <li><a href="#">Content</a></li>
+            <li>
+                <a href="#">T1 lol <span class="arrow">▼</span></a>
+                <ul class="submenu">
+                    <li><a href="../menu/zeus.jpg">Zeus</a></li>
+                    <li><a href="../menu/oner.jpg">Oner</a></li>
+                    <li><a href="../menu/faker.jpg">Faker</a></li>
+                    <li><a href="../menu/guma.jpg">Gumayusi</a></li>
+                    <li><a href="../menu/keriaa.jpg">Keria</a></li>
+                </ul>
+            </li>
+            <li><a href="https://t1.fan/community/board/63465c13ec5bd635305be9ad">Community</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="https://www.pikachucodien.net/">Shop</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
